@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Menu Example</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sample Bootsrtap Menu application">
+  <meta name="author" content="John M. Wargo">
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#about">Bootstrap Menu Example</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a class="menuLink" href="#menu1"><span class="glyphicon glyphicon-compressed"></span> Menu 1</a>
+          </li>
+          <li><a class="menuLink" href="#menu2"><span class="glyphicon glyphicon-tasks"></span> Menu 2</a>
+          </li>
+          <li><a class="menuLink" href="#menu3"><span class="glyphicon glyphicon-play-circle"></span> Menu 3</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="menuLink" href="#settings"><span class="glyphicon glyphicon-cog"></span> Settings</a>
+          </li>
+          <li class="active"><a class="menuLink" href="#about"><span class="glyphicon glyphicon-star-empty"></span> About</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <!----------------------------------------------------------------------->
+
+  <!-- Begin page content -->
+  <div class="container">
+    <div class="content" id="menu1" hidden="true">
+      <div class="page-header">
+        <h1>Menu 1</h1>
+      </div>
+      <p>This is some content for the Menu 1 page.</p>
+    </div>
+
+    <!----------------------------------------------------------------------->
+
+    <div class="content" id="menu2" hidden="true">
+      <div class="page-header">
+        <h1>Menu 2</h1>
+      </div>
+      <p>This is some content for the Menu 2 page.</p>
+    </div>
+
+    <!----------------------------------------------------------------------->
+
+    <div class="content" id="menu3" hidden="true">
+      <div class="page-header">
+        <h1>Menu 3</h1>
+      </div>
+      <p>This is some content for the Menu 3 page.</p>
+    </div>
+
+    <!----------------------------------------------------------------------->
+
+    <div class="content" id="settings" hidden="true">
+      <div class="page-header">
+        <h1>Settings</h1>
+      </div>
+      <p>This is some content for the settings page.</p>
+    </div>
+
+    <!----------------------------------------------------------------------->
+
+    <div class="content" id="about">
+      <div class="page-header">
+        <h1>Bootstrap Menu Example</h1>
+      </div>
+      <p class="lead">Bacon ipsum dolor sit amet kielbasa cow ribeye, doner ground round short loin pastrami andouille sausage swine t-bone beef jowl meatloaf capicola. Pork beef flank shoulder pork loin frankfurter ham hock meatball prosciutto fatback. Pig ham hock flank ribeye pork loin prosciutto beef ribs pastrami meatball t-bone swine. Biltong bacon shank, jowl pancetta spare ribs pastrami beef. Pork loin tri-tip t-bone short loin swine leberkas beef rump short ribs kielbasa drumstick flank ham hock. Ribeye pork belly sirloin, drumstick andouille short loin boudin jowl pancetta tri-tip. Spare ribs frankfurter pork loin fatback filet mignon boudin chuck tri-tip leberkas tail t-bone ground round biltong.</p>
+      <p>Pork bresaola boudin, fatback salami t-bone ham hock turducken. Kielbasa pancetta meatloaf sausage, flank beef ribs swine meatball boudin ham hamburger rump beef. Leberkas capicola ground round, chuck t-bone porchetta landjaeger tongue shankle. Pastrami flank pork belly venison frankfurter. Tri-tip pork chop ball tip jerky tenderloin cow.</p>
+      <p>Capicola strip steak turkey meatball meatloaf kielbasa short loin corned beef salami biltong. Landjaeger leberkas bacon brisket capicola tri-tip. Tongue chuck hamburger brisket doner salami turkey sirloin bresaola. Tri-tip ham ham hock, chicken ribeye pancetta porchetta biltong.</p>
+      <hr />
+      <p>Created by John M. Wargo</p>
+    </div>
+
+    <!----------------------------------------------------------------------->
+
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p class="text-muted">&copy; <a href="http://www.johnwargo.com" target="_blank">John M. Wargo</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+  <script>
+    //Call our init function to get things going...
+    app.initialize();
+  </script>
+</body>
+
+</html>
