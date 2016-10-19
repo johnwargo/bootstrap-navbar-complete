@@ -38,6 +38,16 @@ $(".menuLink").on('click', function (e) {
   $($(this).attr('href')).show();
 });
 
+//===========================================
+  //Do this so the menu collapses when you click an item
+  //http://stackoverflow.com/questions/21203111/bootstrap-3-collapsed-menu-doesnt-close-on-click
+  //===========================================
+  $(document).on('click', '.navbar-collapse.in', function (e) {
+    if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+      $(this).collapse('hide');
+    }
+  });
+  
     console.log("Leaving app.initialize()");
   }
 };
